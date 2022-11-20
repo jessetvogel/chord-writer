@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Chord Writer</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/codeflask.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/jspdf.umd.min.js"></script>
+    <script src="js/jspdf.plugin.autotable.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div id="menu">
+        <button id="button-settings" title="⌘ + ," onclick="javascript:showSettings();">Settings</button>
+        <button id="button-download" title="⌘ + S" onclick="javascript:downloadPDF();">Download PDF</button>
+        <button id="button-compile" title="⌘ + Enter" onclick="javascript:compilePDF();">Compile</button>
+    </div>
+    <div id="editor">
+        <div id="editor-input"></div>
+    </div>
+    <div id="preview">
+        <iframe id="preview-iframe" src="default.html"></iframe>
+    </div>
+    <div id="settings">
+        <div class="panel">
+            <span>Settings</span> <!-- Close button -->
+            <div id="settings-list"></div>
+        </div>
+    </div>
+</body>
+
+</html>
